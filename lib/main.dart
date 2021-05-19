@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:nid_notes/helper/database.dart';
 import 'package:nid_notes/screens/home.dart';
 import 'package:nid_notes/screens/login.dart';
 import 'package:nid_notes/screens/splash.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(NIDNotes());
 }
 
